@@ -34,7 +34,7 @@ function deletarJogador () {
         let nomeDeletado = prompt("Digite o nome do jogador que deseja deletar: ");
         let index = time.indexOf(nomeDeletado);
 
-        if (index !== -1) {
+        if (index === -1) {
             console.log("Jogador não encontrado");
             return;
         }
