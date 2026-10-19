@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-color: #8C7AB5; /* Cor de fundo da página */
+    color: #d9429d;            /* Cor do texto geral */
+    font-family: 'Rosarivo', serif; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+    text-align: center;
+    transform: scale(1.25);
+}
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.foto {
+    width: 150px;           /* Largura do círculo */
+    height: 150px;          /* Altura do círculo */
+    border-radius: 50%;     /* Deixa perfeitamente redondo */
+    overflow: hidden;       /* Corta o que passar do círculo */
+    border: 3px solid #ffffff; /* Borda branca estilizada (opcional) */
+    margin: 0 auto;r;
+    overflow: hidden;
+}
+.perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* Preenche todo o círculo sem esticar */
+    object-position: 65% 30%;
+}
+
+.informacoes h1 {
+    font-family: 'Luckiest Guy', cursive; /* Fonte do título */
+    font-size: 2rem;
+    color: #a29bfe;
+    margin-bottom: 8px;
+}
+
+.informacoes p {
+    font-size: 1.1rem;
+    color: #b2bec3;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.link-button {
+    display: block;
+    padding: 14px 20px;
+    background-color: #F4B2CA;
+    color: #ffffff;
+    text-decoration: none; 
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-button:hover {
+    background-color: #20AAAC;
+    transform: translateY(-2px); 
+}
+.rodape{
+    margin: 10px 0%;
+}
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.sobre-page {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #243b75,
+        #4265a3,
+        #667fba
+    );
+    color: #f5e9ef;
+    font-family: "Rosarivo", serif;
+    padding: 40px 20px;
+}
+
+.sobre {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.voltar {
+    display: inline-block;
+    color: #f5dce5;
+    text-decoration: none;
+    margin-bottom: 30px;
+    transition: color 0.3s;
+}
+
+.voltar:hover {
+    color: white;
+}
+
+.sobre h1 {
+    color: #8bc5ff;
+    font-family: "Luckiest Guy", cursive;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    margin-bottom: 12px;
+}
+
+.subtitulo {
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+.cartao-sobre {
+    background: rgba(247, 222, 231, 0.94);
+    color: #344779;
+    padding: 32px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(16, 27, 65, 0.18);
+}
+
+.cartao-sobre h2,
+.interesses h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.cartao-sobre p {
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.interesses {
+    margin: 35px 0;
+}
+
+.etiquetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.etiquetas span {
+    background: #f0d8e1;
+    color: #344779;
+    padding: 12px 18px;
+    border-radius: 12px;
+}
+
+.botao-projetos {
+    display: inline-block;
+    background: #f0d8e1;
+    color: #344779;
+    padding: 16px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.botao-projetos:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+    .sobre-page {
+        padding: 28px 16px;
+    }
+
+    .cartao-sobre {
+        padding: 22px;
+    }
+}.projetos-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 35px 20px;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #302e69,
+        #514b91,
+        #7775b8
+    );
+
+    color: #f9eaf0;
+    font-family: "Rosarivo", serif;
+}
+
+.projetos-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.voltar-projetos {
+    display: inline-block;
+    margin-bottom: 35px;
+
+    color: #f5dce8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.voltar-projetos:hover {
+    color: white;
+}
+
+.cabecalho-projetos {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.decoracao {
+    color: #f4c9dc;
+    font-size: 32px;
+}
+
+.cabecalho-projetos h1 {
+    margin: 15px 0;
+    color: #b7d9ff;
+    font-family: "Luckiest Guy", cursive;
+    font-size: clamp(2.3rem, 6vw, 3.8rem);
+}
+
+.cabecalho-projetos p {
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #f1e5f2;
+}
+
+.lista-projetos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+
+    background: rgba(238, 221, 244, 0.13);
+    box-shadow: 0 12px 30px rgba(25, 22, 64, 0.18);
+
+    transition: transform 0.3s, background 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    background: rgba(238, 221, 244, 0.20);
+}
+
+.numero-projeto {
+    color: #f5c9dd;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.projeto-card h2 {
+    color: #c5e0ff;
+    margin: 20px 0 10px;
+}
+
+.projeto-card p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.botao-projeto {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 18px;
+
+    background: #f1d5e2;
+    color: #39356f;
+
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+
+    transition: background 0.3s, transform 0.3s;
+}
+
+.botao-projeto:hover {
+    background: #ffffff;
+    transform: scale(1.02);
+}
+
+.rodape-projetos {
+    margin-top: 55px;
+    text-align: center;
+    color: #e9d9f0;
+}
+
+@media (max-width: 650px) {
+    .lista-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto-card {
+        padding: 25px;
+    }
+
+    .cabecalho-projetos {
+        margin-bottom: 35px;
+    }
+}
+
+.certificados-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 35px 20px;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #302e69,
+        #514b91,
+        #7775b8
+    );
+
+    color: #f9eaf0;
+    font-family: "Rosarivo", serif;
+}
+
+.certificados-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.voltar-certificados {
+    display: inline-block;
+    margin-bottom: 35px;
+
+    color: #f5dce8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.voltar-certificados:hover {
+    color: white;
+}
+
+.cabecalho-certificados {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.decoracao-certificados {
+    color: #f4c9dc;
+    font-size: 32px;
+}
+
+.cabecalho-certificados h1 {
+    margin: 15px 0;
+    color: #b7d9ff;
+    font-family: "Luckiest Guy", cursive;
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+}
+
+.cabecalho-certificados p {
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #f1e5f2;
+}
+
+.lista-certificados {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.certificado-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+
+    background: rgba(238, 221, 244, 0.13);
+    box-shadow: 0 12px 30px rgba(25, 22, 64, 0.18);
+
+    transition: transform 0.3s, background 0.3s;
+}
+
+.certificado-card:hover {
+    transform: translateY(-5px);
+    background: rgba(238, 221, 244, 0.20);
+}
+
+.numero-certificado {
+    color: #f5c9dd;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.certificado-card h2 {
+    color: #c5e0ff;
+    margin: 20px 0 10px;
+}
+
+.certificado-card p {
+    line-height: 1.7;
+    margin: 5px 0;
+}
+
+.botao-certificado {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 25px;
+    padding: 16px 18px;
+
+    background: #f1d5e2;
+    color: #39356f;
+
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+
+    transition: background 0.3s, transform 0.3s;
+}
+
+.botao-certificado:hover {
+    background: #ffffff;
+    transform: scale(1.02);
+}
+
+.rodape-certificados {
+    margin-top: 55px;
+    text-align: center;
+    color: #e9d9f0;
+}
+
+@media (max-width: 650px) {
+    .lista-certificados {
+        grid-template-columns: 1fr;
+    }
+
+    .certificado-card {
+        padding: 25px;
+    }
+
+    .cabecalho-certificados {
+        margin-bottom: 35px;
+    }
+}
